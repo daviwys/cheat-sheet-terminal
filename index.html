@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="image/png" href="./img/terminal_icon.png" />
+	<title>TERMINAL : SOME SHORTCUTS</title>
+</head>
+<body id="top">
+	<header>
+		<h1>TERMINAL : SOME SHORTCUTS</h1>	
+	</header>
+	<!-- MENU OF NAVIGATE ++++++++++++++++++++++++++++++++++++++++++ -->
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li><a href="./contact.html" title="Send a message">Contact</a></li>
+			<li><a href="./license.html" title="See">License</a></li>
+		</ul>
+	</nav>
+	<!-- MAIN CONTENT ++++++++++++++++++++++++++++++++++++++++++++++ -->
+		<section>
+		
+			<h2>TABS</h2> 
+			<table>
+				<tr>
+					<td>CTRL + SHIFT + T	</td><td>New tab</td>
+				</tr>
+				<tr>
+					<td>CTRL + SHIFT + W	</td><td>Close active tab</td>
+				</tr>
+				<tr>
+					<td>CTRL + PAGE UP</td><td>Previous tab</td>
+				</tr>
+				<tr>
+					<td>CTRL + PAGE DOWN</td><td>Next tab</td>
+				</tr>
+			</table>
+
+			<h2>AUTOCOMPLETE</h2>
+			<table>
+				<tr>
+					<td>TAB</td><td>Complete the line if a choice is possible</td>
+					<td>CTRL + I</td><td>IDEM</td>
+					<td>TAB + TAB</td><td>Proposes a list of possible correspondence</td>
+				</tr>
+			</table>
+
+			<h2>COMMAND LINE HISTORY</h2>
+			<table>
+				<tr>
+					<td>history</td><td>Historical of commands in reverse order</td>
+					<td>!n</td><td>Execute the command with the number of command "n"</td>
+					<td>!!</td><td>Execute the last command</td>
+					<td>!bla</td><td>Execute the command starting with "bla"</td>
+				</tr>
+			</table>
+
+			<h2>HISTORY AND EXECUTION OF ORDERS</h2>
+			<table>
+				<tr>
+					<td>CTRL + M</td><td>Validate the order, [ENTER]</td>
+					<td>FLÈCHE HAUT</td><td>Navigate in historic, -1 line (command line more and more ancient)</td>
+					<td>CTRL + P</td><td>P for previous</td>
+					<td>FLÈCHE BAS</td><td>Navigate in historic, +1 line (command line more and more recent)</td>
+					<td>CTRL + N</td><td>N for next</td>
+				</tr>
+			</table>
+
+			<p>Search a command in the history :</p>
+
+			<table>
+				<tr>
+					<td>CTRL + R</td><td>Search in the historic</td>
+				</tr>
+				<tr>
+					<td>ALT + R</td><td>if, in command prompt, you have modified a line recalled of historic, this shortcut puts back in state (as it is in the hstoric</td>
+				</tr>
+			</table>
+
+			<p>When you search in history with CTRL+r and that multiple occurences are found, press CTRL+r repeatedly to switch between them. The search is from the most recent to the oldest.</p>
+
+			<p>When writing a command, you can insert the first word of the previous command executeda. for that :</p>
+
+			<p>ALT + . &nbsp;&nbsp;&larr; Recall the first word of the previous command</p>
+
+			<h2>MANIPULATE THE CURSOR</h2>
+			<table>
+				<tr>
+					<td>CTRL + A</td><td>Go to the beginning of the line</td>
+					<td>CTRL + E</td><td>Go to the end of the line</td>
+					<td>ALT + B</td><td>Moves back, word by word</td>
+					<td>ALT + F</td><td>Moves forward, word by word</td>
+					<td>CTRL + B</td><td>Moves back, character by character</td>
+					<td>CTRL + F</td><td>Moves forward, character by character</td>
+					<td>CTRL + XX</td><td>Alternate between the actual cursor position and the start of the command</td>
+				</tr>
+			</table>
+
+			<h2>MANIPULER LE TEXTE</h2>
+			<p>It is possible to delete a character before or after the cursor with the shortcuts :</p>
+
+			<table>
+				<tr>
+					<td>CTRL + D</td><td>Delete the current character and, if the line is blank, close the terminal</td>
+				</tr>
+				<tr>
+					<td>CTRL + H</td><td>Delete the character which is before the cursor</td>
+				</tr>
+
+			<p>These functions are also available for delete the words and the lines :</p>
+
+			| SHORTCUT | DESCRIPTION |
+			| --- | --- |
+			<table>
+				<tr>
+					<td>ALT + D</td><td>Delete the word at right of cursor, or the rest of word from cursor and towards right</td>
+					<td>CTRL + W</td><td>Delete yhe word at left of cursor, or the rest of word towards left</td>
+					<td>CTRL + K</td><td>Delete from cursor until the end of command</td>
+					<td>CTRL + U</td><td>Delete from cursor until start of command</td>
+				</tr>
+			</table>
+
+			<p>Note that words or lines deleted with previous commands will be in the Bash clipboard.
+			This clipboard is different that the one in the desktop, with which he doesn't communicate !</p>
+
+			<p>When you fill the clipboard, he does not forget what he contains. Everything is kept in memory and you can choose what you want to paste.</p> 
+
+			<p>The shortcuts of clipboard of Bash are :</p>
+			<table>
+				<tr>
+					<td>CTRL + Y</td><td>Paste the last element into the clipboard, deleted by CTRL+U, CTRL+W ou CTRL+K</td>
+					<td>ALT + Y</td><td>After using CTRL+Y, invert the text pasted with what was previously in the clipboard</td>
+				</tr>
+			</table>
+
+			<p>Bash also allows you to swap two letters or two words :</p>
+
+			| SHORTCUT | DESCRIPTION |
+			| --- | --- |
+			<table>
+				<tr>
+					<td>CTRL + T</td><td>Invert the letter under cursor with the one that precedes it</td>
+					<td>ALT + T</td><td>Same, with 2 words</td>
+				</tr>
+			</table>
+
+			<p>Finally, it is possible to transform the case of a word :</p>
+
+			<table>
+				<tr>
+					<td>ALT + U</td><td>Convert a word in uppercase, from the cursor</td>
+					<td>ALT + L</td><td>Convert a word in lowercase, from the cursor</td>
+					<td>ALT + C</td><td>Capitalize a word (the first letter of word in uppercase)</td>
+				</tr>
+			</table>
+
+			<h2>COPY/PASTE</h2>
+			<table>
+				<tr>
+					<td>CTRL + SHIFT + C</td><td>Copy</td>
+					<td>Sélectionnez le texte</td><td>Copy</td>
+					<td>CTRL + SHIFT + V</td><td>Paste</td>
+					<td>Clic avec la roulette de la souris</td><td>Paste</td>
+				</tr>
+			</table>
+
+			<h2>CANCEL</h2> 
+
+			<p>There are 2 shortcuts to cancel :</p>
+
+			<table>
+				<tr>
+					<td>CTRL + /</td><td>Undo the last action (equivalent to CTRL+Z)</td>
+					<td>CTRL + G</td><td>Leave a search into historic</td>
+				</tr>
+			</table>
+
+			<h2>MANAGE THE PROCESSES</h2>
+			<p>When a process is started in the foreground from Bash, the following shortcuts are available :</p>
+
+			<table>
+				<tr>
+					<td>CTRL + C</td><td>Finish the process. Do not worry, he will not suffer ;)</td>
+					<td>CTRL + Z</td><td>Pause the process. Can be revived in the foreground or background with the commands "fg" or "bg". The command "jobs" list the processes in pause.</td>
+				</tr>
+			</table>
+
+			<h2>CLEAN AND MANAGE THE DISPLAY</h2>
+			<p>It is possible to manipulate what Bash shows on the screen with these three shortcuts :</p>
+
+			<table>
+				<tr>
+					<td>CTRL + L</td><td>Cleans the screen to show only a command prompt blank</td>
+					<td>CTRL + S</td><td>Stop the display ; very useful when a very verbose program runs</td>
+					<td>CTRL + Q</td><td>Resumes the display stopped with CTRL+S</td>
+				</tr>
+			</table>
+
+			<h2>END OF FILE</h2>
+			<p>There is a shortcut to send the EOF (End Of File) character: CTRL + D<br />
+			If you send this character on a command line, this is equivalent to the exit command.</p>
+			
+		</section>
+	<!-- FOOTER ++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+	<footer>
+		<a href="./license.html" title="See">GNU GPL v3.0</a>
+		<a href="https://daviwys.github.io/cheat-sheet-git/" title="See cheat sheet on Git">Git</a>
+		<a href="https://daviwys.github.io/cheat-sheet-vim/" title="See cheat sheet on Vim">Vim</a>
+		<a href="#top" title="Return to the top">Top</a>
+	</footer>
+</body>
+</html>
